@@ -191,7 +191,7 @@
               <attDef ident="href">
                 <desc>supplies the URI of the object pointed at</desc>
                 <datatype>
-                  <rng:data xmlns:rng="http://relaxng.org/ns/structure/1.0" type="anyURI"/>
+                  <dataRef name="anyURI"/>
                 </datatype>
               </attDef>
             </attList>
@@ -217,7 +217,7 @@
                 <attDef ident="href">
                   <desc>fournit l' URI de l'objet ciblé</desc>
                   <datatype>
-                    <rng:data xmlns:rng="http://relaxng.org/ns/structure/1.0" type="anyURI"/>
+                    <dataRef name="anyURI"/>
                   </datatype>
                 </attDef>
               </attList>
@@ -291,7 +291,7 @@
           <item>Créez un nouveau fichier (CTRL-N)</item>
           <item>Sélectionnez <ident>TEI-P5 -> ODD Customization</ident> dans le menu <ident>Cadre
               des modèles</ident> du dialog <ident>Nouveau</ident></item>
-          <item>Remplacer l'élément <gi>schemaSpec</gi> proposé par le contenu du fichier
+          <item>Remplacez la ligne <code>&lt;schemaSpec ident="myTEI"></code> proposé en bas par le contenu du fichier
               <ident>oddex-1.xml</ident></item>
           <item> Insérez le contenu du fichier <ident>oddex-1-doc.xml </ident>
             <emph>avant</emph> le nouveau <gi>schemaSpec</gi></item>

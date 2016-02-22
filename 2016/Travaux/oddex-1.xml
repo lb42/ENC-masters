@@ -23,7 +23,7 @@
             <attDef ident="href">
                 <desc>fournit l' URI de l'objet ciblé</desc>
                 <datatype>
-                    <rng:data xmlns:rng="http://relaxng.org/ns/structure/1.0" type="anyURI"/>
+                    <dataRef name="anyURI"/>
                 </datatype>
             </attDef>
         </attList>
