@@ -243,7 +243,7 @@
       </div>
       <div xml:lang="fr">
         <head>Organigramme ODD</head>
-        <p><graphic url="../Graphics/oddity.png"/></p>
+        <p><graphic url="../../tei-fr/trunk/Talks/Graphics/oddity.png"/></p>
       </div>
       <div xml:lang="en">
         <head>What about this <att>prefix</att> thing?</head>
@@ -426,7 +426,7 @@
               </formula>, Vavilov distribution, and ... </p>
           </egXML>
         </p>
-        <p><graphic url="../Graphics/vavilov.png"/></p>
+        <p><graphic url="../../tei-fr/trunk/Talk/Graphics/vavilov.png"/></p>
       </div>
       <div xml:lang="en">
         <head>Merging SVG uses a different technique</head>

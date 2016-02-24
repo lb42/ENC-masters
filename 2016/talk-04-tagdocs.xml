@@ -161,7 +161,7 @@
      cannot be included unless you  have chinese font -->
         <p>Cette partie de texte des Guidelines:</p>
         <p>
-          <graphic url="../Graphics/ft-1.png"/></p>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/ft-1.png"/></p>
         <p> est généré à partir de ces lignes de code ODD : <egXML
             xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
             <div>

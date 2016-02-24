@@ -41,7 +41,7 @@
       <div xml:id="model">
         <head>Modelisation</head>
         <figure>
-          <graphic url="../Graphics/ceci-nest-pas-une-pipe.jpg" height="75%"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/ceci-nest-pas-une-pipe.jpg" height="75%"/>
         </figure>
         <p>La modelisation de vos données est un préalable essentiel. Que vous vous serviez de UML,
           de RDBMS, de SKOS, ou quoique ce soit d'autre, si vous n'avez pas un modèle explicite des choses que vous souhaitez
@@ -51,7 +51,7 @@
       <div xml:id="map">
         <head>Orientation</head>
         <figure>
-          <graphic url="../Graphics/sweeties.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/sweeties.jpg"/>
         </figure>
       </div>
 
@@ -97,7 +97,7 @@
       </div>
       <div>
         <figure>
-          <graphic url="../Graphics/theGuidelines.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/theGuidelines.jpg"/>
         </figure>
       </div>
       
@@ -132,7 +132,7 @@
       <div>
         <head>La TEI jadis</head>
         <figure rend="center">
-          <graphic url="../Graphics/tei-structure-1991.png" height="90%"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/tei-structure-1991.png" height="90%"/>
         </figure>
       </div>
 
@@ -164,7 +164,7 @@
       <div>
         <head>Organisation de la TEI</head>
         <figure>
-          <graphic height="80%" url="../Graphics/tei-community.png"/>
+          <graphic height="80%" url="../../tei-fr/trunk/Talks/Graphics/tei-community.png"/>
         </figure>
       </div>
       <div rend="slide">

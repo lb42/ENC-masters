@@ -78,41 +78,41 @@
       <div xml:lang="en">
         <head>A postcard (front)</head>
         <figure>
-          <graphic url="../Graphics/19800726_001r.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/19800726_001r.jpg"/>
         </figure>
       </div>
       
       <div xml:lang="fr">
         <head>Une carte (recto)</head>
         <figure>
-          <graphic url="../Graphics/Cartes/19800726_001r.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/Cartes/19800726_001r.jpg"/>
         </figure>
       </div>
       
       <div xml:lang="en">
         <head>A postcard (back)</head>
         <figure>
-          <graphic url="../Graphics/19800726_001v.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/19800726_001v.jpg"/>
         </figure>
       </div>
       
       <div xml:lang="fr">
         <head>Une carte (verso)</head>
         <figure>
-          <graphic url="../Graphics/Cartes/19800726_001v.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/Cartes/19800726_001v.jpg"/>
         </figure>
       </div>
       <div xml:lang="en">
         <head>Another postcard</head>
         <figure>
-          <graphic url="../Graphics/carte-2.png"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/carte-2.png"/>
         </figure>
         <p>Not all cards are organized the same way...</p></div>
       
       <div xml:lang="fr">
         <head>Encore une carte</head>
         <figure>
-          <graphic url="../Graphics/carte-2.png"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/carte-2.png"/>
           <p>NB : la structuration n'est pas toujours identique ...</p>
         </figure>
       </div>      
@@ -372,7 +372,7 @@ intelligent searching difficult.</item>
           <body>
             <div type="recto">
               <figure>
-                <graphic url="../../Graphics/Cartes/19800726_001r.jpg"/>
+                <graphic url="../../../tei-fr/trunk/Talks/Graphics/Cartes/19800726_001r.jpg"/>
                 <figDesc>View of a stream with a stone bridge and little mexican-style houses. In the foreground a man and a woman are riding in an open boat.</figDesc>
                 <head>San Antonio River</head>
               </figure>
@@ -400,14 +400,14 @@ intelligent searching difficult.</item>
             <body>
               <div type="recto">
                 <figure>
-                  <graphic url="../../Graphics/Cartes/19800726_001r.jpg"/>
+                  <graphic url="../../../tei-fr/trunk/Talks/Graphics/Cartes/19800726_001r.jpg"/>
                   <figDesc>Vue d'un cours d'eau avec un pont en pierre et de petites maisons de
                     style mexicain. Un homme et une femme naviguent un pédalo au premier
                     plan.</figDesc>
                   <head>San Antonio River</head>
                 </figure>
               </div>
-              <div facs="../../Graphics/Cartes/19800726_001v.jpg" type="verso">
+              <div facs="../../../tei-fr/trunk/Talks/Graphics/Cartes/19800726_001v.jpg" type="verso">
                 <div type="message">
                   <!-- ... -->
                 </div>
