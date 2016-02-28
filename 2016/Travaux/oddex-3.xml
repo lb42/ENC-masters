@@ -4,12 +4,12 @@
         <attDef ident="xml:id">
             <desc>fournit un identifiant unique pour le composant</desc>
             <datatype>
-                <data xmlns="http://relaxng.org/ns/structure/1.0" type="ID"/>
+                <dataRef name="ID"/>
             </datatype>
         </attDef>
         <attDef ident="status">
             <desc>indique le statut de l'élément </desc>
-            <valList>
+            <valList type="closed">
                 <valItem ident="red"/>
                 <valItem ident="green"/>
                 <valItem ident="unknown"/>

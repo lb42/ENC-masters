@@ -311,21 +311,22 @@
         <p>Ayant elle-même ces mêmes besoins, la TEI vous propose : <list type="gloss">
           <label>ODD</label>
           <item>Un vocabulaire XML pour définir les vocabulaires XML</item>
-          <label>Stylesheets</label>
-          <item>Un ensemble de feuilles de style XSLT très générique pour la conversion des
-            documents XML TEI</item>
+          
           <label>Roma</label>
-          <item>Un logiciel pour traiter des documents exprimés dans ce vocabulaire, pour en faire
+          <item>Un logiciel pour traîter (ou générer) des documents exprimés dans ce vocabulaire, pour en faire
             ressortir <list>
               <item>des schémas RELAXNG, DTD, etc. </item>
               <item>des manuels "mode d'emploi" en HTML, PDF etc.</item>
             </list></item>
           <label>OxGarage</label>
-          <item>Un outil web pour effectuer plusieurs transformations documentaires, par ex <list>
+          <item>Un logiciel pour effectuer des transformations documentaires, par ex <list>
             <item>de DOCX en TEI, et l'inverse</item>
             <item>de HTML en TEI, et l'inverse</item>
           </list>
           </item>
+          <label>Stylesheets</label>
+          <item>Un ensemble de feuilles de style XSLT très générique pour la conversion des
+            documents XML TEI; utilisé par les deux logiciels déjà cités, et par oXygen</item>
         </list></p>
       </div>
       

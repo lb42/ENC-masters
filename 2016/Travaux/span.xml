@@ -25,7 +25,7 @@ $Id: span.xml 13000 2014-09-09 22:44:07Z martindholmes $
     <memberOf key="model.global.meta"/>
   </classes>
   <content>
-    <ref xmlns="http://relaxng.org/ns/structure/1.0" name="macro.phraseSeq.limited"/>
+    <macroRef key="macro.phraseSeq.limited"/>
   </content>
   <constraintSpec ident="targetfrom" scheme="isoschematron">
     <constraint>

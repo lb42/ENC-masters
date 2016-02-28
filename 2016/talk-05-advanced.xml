@@ -426,7 +426,7 @@
               </formula>, Vavilov distribution, and ... </p>
           </egXML>
         </p>
-        <p><graphic url="../../tei-fr/trunk/Talk/Graphics/vavilov.png"/></p>
+        <p><graphic url="../../tei-fr/trunk/Talks/Graphics/vavilov.png"/></p>
       </div>
       <div xml:lang="en">
         <head>Merging SVG uses a different technique</head>

@@ -5,7 +5,6 @@
       <titleStmt>
         <title xml:lang="en">How the TEI uses ODD</title>
         <title xml:lang="fr">Comment la TEI utilise ODD</title>
-
         <author xml:id="LB">Lou Burnard Consulting</author>
       </titleStmt>
       <publicationStmt>
@@ -59,8 +58,8 @@
               TEI-XML, la plupart définissant un module, par ex
               <ident>PH-PrimarySources.xml</ident></item>
             <item>778 fichiers en TEI-XML, chacun définissant un élément, une classe, ou une macro <list>
-                <item>29 datatypes (<code>data.xxxx</code>) par ex.
-                  <ident>data.sex.xml</ident></item>
+                <item>29 datatypes (<code>teidata.xxxx</code>) par ex.
+                    <ident>teidata.sex.xml</ident></item>
                 <item>116 classes de type modèle (code>model.xxxx) par ex.
                     <ident>model.biblLike.xml</ident></item>
                 <item>71 classes de type attribut (<code>att.xxxx</code>) par ex.
@@ -81,9 +80,10 @@
           <item>The file <ident>guidelines-XX.xml</ident> is the <soCalled>driver file</soCalled>
             for the version of the Guidelines in language XX.</item>
           <item>It contains some preliminaries (a TEI Header, a title page, etc.), followed by
-            several lines like this : <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples"
-              >&lt;include xmlns="http://www.w3.org/2001/XInclude"
-              href="Guidelines/en/HD-Header.xml"/> </egXML>, one for each chapter</item>
+            several lines like this :
+            <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">&lt;include
+              xmlns="http://www.w3.org/2001/XInclude" href="Guidelines/en/HD-Header.xml"/> </egXML>
+             , one for each chapter</item>
           <item>Within each chapter file there are similar <code>xInclude</code> statements for the
             objects declared by that chapter </item>
         </list>
@@ -93,13 +93,13 @@
         <p>Il ne faut pas confondre l'organisation physique (en fichiers) avec l'organisation
           logique (en spécifications etc.)</p>
         <list>
-          <item>Le fichier <ident>guidelines-XX.xml</ident> est <soCalled>la</soCalled> la source des
+          <item>Le fichier <ident>guidelines-XX.xml</ident> est <emph>la</emph> source des
             Guidelines pour la langue XX.</item>
           <item>Mis à part quelques liminaires (un TEI Header, la page de titre, etc.), il contient
-            plusieurs lignes comme ceci : <egXML rend="tiny"
-              xmlns="http://www.tei-c.org/ns/Examples">&lt;include
-              xmlns="http://www.w3.org/2001/XInclude" href="Guidelines/en/HD-Header.xml"/>
-            </egXML></item>
+            plusieurs lignes comme ceci :
+            <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">&lt;include
+              xmlns="http://www.w3.org/2001/XInclude" href="Guidelines/en/HD-Header.xml"/> </egXML>
+          </item>
           <item>Au sein de chaque chapitre, on trouve des <code>xInclude</code> similaires pour les
             objets définis par ce chapitre.</item>
         </list>
@@ -135,8 +135,8 @@
         <p>This piece of generated text in the English Guidelines :</p>
         <p>
           <graphic url="ft-1.png"/></p>
-        <p>is produced from this ODD code : <egXML xmlns="http://www.tei-c.org/ns/Examples"
-            rend="teeny">
+        <p>is produced from this ODD code :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
             <div>
               <head>Module for Tables, Formulæ, Notated Music, and Graphics</head>
               <p>The module described in this chapter provides the following features: <moduleSpec
@@ -152,8 +152,8 @@
                 <specGrpRef target="#DFTNTM"/>
                 <specGrpRef target="#DFTGRA"/>
               </p>
-            </div></egXML></p>
-
+            </div></egXML>
+        </p>
       </div>
       <div xml:lang="fr">
         <head>Par exemple...</head>
@@ -162,8 +162,8 @@
         <p>Cette partie de texte des Guidelines:</p>
         <p>
           <graphic url="../../tei-fr/trunk/Talks/Graphics/ft-1.png"/></p>
-        <p> est généré à partir de ces lignes de code ODD : <egXML
-            xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+        <p> est généré à partir de ces lignes de code ODD :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
             <div>
               <head>Module for Tables, Formulæ, Notated Music, and Graphics</head>
               <p>The module described in this chapter provides the following features: <moduleSpec
@@ -178,7 +178,8 @@
                 <specGrpRef target="#DFTNTM"/>
                 <specGrpRef target="#DFTGRA"/>
               </p>
-            </div></egXML></p>
+            </div></egXML>
+        </p>
       </div>
       <div xml:lang="en">
         <head>The pointers lead to things like this </head>
@@ -199,7 +200,6 @@
           </elementSpec>
         </egXML>
       </div>
-
       <div xml:lang="fr">
         <head>Les pointers (#DFTTAB etc.) indique des <term>specGrp</term>, comme ceci ... </head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"> &lt;specGrp xml:id="DFTTAB"
@@ -216,7 +216,6 @@
           </elementSpec>
         </egXML>
       </div>
-
       <div xml:lang="en">
         <head>What sort of "objects" are specified?</head>
         <list>
@@ -228,7 +227,6 @@
         </list>
         <p rend="box">We'll take a closer look at an example of each...</p>
       </div>
-
       <div xml:lang="fr">
         <head>De quels types d'objet s'agit-il ?</head>
         <list>
@@ -242,7 +240,7 @@
       </div>
       <div xml:lang="en">
         <head>An ODD specification</head>
-        <p rend="box">Open <ident>data.sex.xml</ident> with oXygen</p>
+        <p rend="box">Open <ident>teidata.sex.xml</ident> with oXygen</p>
         <p>Like any other TEI specification file ... <list>
             <item>It's an XML document which can be validated against the schema file
               specified</item>
@@ -256,11 +254,9 @@
               within a <gi>listRef</gi> element. </item>
           </list></p>
       </div>
-
-
       <div xml:lang="fr">
         <head>Une spécification ODD</head>
-        <p rend="box">Ouvrez <ident>data.sex.xml</ident> avec oXygen</p>
+        <p rend="box">Ouvrez <ident>teidata.sex.xml</ident> avec oXygen</p>
         <p>Comme tout autre spécification TEI... <list>
             <item>C'est un document XML, à valider contre le schéma spécifié </item>
             <item>Avec deux licences open source</item>
@@ -275,7 +271,6 @@
               regroupés dans un élément <gi>listRef</gi></item>
           </list></p>
       </div>
-
       <div xml:lang="en">
         <head>A datatype specification</head>
         <list>
@@ -294,21 +289,21 @@
       </div>
       <div xml:lang="fr">
         <head>Spécification d'un datatype</head>
-
         <list>
-
-          <item>A présent, nous représentons les types de données en utilisant des macros. </item>
-          <item>Le développement de la macro est fournie par l'élément <gi>content</gi> : ici, par
-            référence à une autre macro <code>data.word</code></item>
-          <item>En effet, tous les datatypes TEI(sauf 2) sont mappés sur <list>
-              <item>un token/patron</item>
-              <item>un type de base XSD</item>
+          <item>L'élément <gi>content</gi> fournit la definition du datatype en utilisant un
+              <gi>dataRef</gi> qui peut référencier <list>
+              <item>une spécification TEI en utilisant <att>key</att></item>
+              <item>une spécification W3C type de base XSD en utilisant <att>name</att></item>
+              <item>une spécification ailleurs en utilisant <att>url</att></item>
             </list>
           </item>
-          <item>La macro <code>data.word</code> est très repandue en P5: elle correspond à un patron
-            permettant n'importe quelle séquence de lettres, chiffres, et caractères de ponctuation
-            sans espaces </item>
-
+          <item>Il s'agit ici de la specification TEI <ident>teidata.word</ident></item>
+          <item>Ce datatype est très repandue en P5: regardons son contenu (ouvrez le fichier
+              <ident>teidata.word</ident>)</item>
+          <item>Son <gi>content</gi> contient un <gi>dataRef</gi> qui fait appel au type de base XSD
+              <code>token</code> modifié par un patron</item>
+          <item> Ce patron permet n'importe quelle séquence de lettres, chiffres, et caractères de
+            ponctuation sans espaces </item>
         </list>
       </div>
       <div xml:lang="en">
@@ -346,7 +341,6 @@
             /></item>
         </list>
       </div>
-
       <div xml:lang="en">
         <head>An attribute class specification</head>
         <p rend="box">Open <ident>att.divLike.xml</ident> with oXygen </p>
@@ -374,8 +368,8 @@
         <head>Spécification d'une classe d'attribut</head>
         <p rend="box">Ouvrez <ident>att.divLike.xml</ident> avec oXygen </p>
         <list>
-          <item>On vous recommande d'ouvrir la vue Sommaire (Fenêtre->Afficher la
-            vue->Sommaire) si besoin est pour visualiser la structure</item>
+          <item>On vous recommande d'ouvrir la vue Sommaire (Fenêtre->Afficher la vue->Sommaire) si
+            besoin est pour visualiser la structure</item>
           <item>La liste des attributs fournis par cette classe est specifiée dans un
               <gi>attList</gi>, qui contient deux <gi>attDef</gi> (<att>org</att> et
               <att>uniform</att>)</item>
@@ -405,10 +399,16 @@
         <list>
           <item>Une macro, comme un datatype, fournit une abréviation conventionnelle pour des
             objets souvent utilisés ; dans ce cas, un modèle de contenu.</item>
-          <item>Dans cette version de P5, les modèles de contenu sont exprimés en RELAX NG. Dans la
-            version <ident>pureODD</ident> que nous verrons plus tard, ils sont exprimés en ODD.
-          </item>
+          <item>Les modèles de contenu sont exprimés en utilisant des elements ODD : </item>
         </list>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+          <alternate minOccurs="0" maxOccurs="unbounded">
+            <textNode/>
+            <classRef key="model.gLike"/>
+            <classRef key="model.phrase"/>
+            <classRef key="model.global"/>
+          </alternate>
+        </egXML>
       </div>
       <div xml:lang="en">
         <head>An element specification</head>
@@ -419,7 +419,7 @@
           <item>The <gi>elementSpec</gi> has attributes <att>module</att> and <att>ident</att>
             identifying its module and its canonical name</item>
           <item>The <gi>classes</gi> element specifies to which classes it belongs</item>
-          <item>The <gi>content</gi> element specifies its possible conmtent (in this version, in
+          <item>The <gi>content</gi> element specifies its possible content (in this version, in
             RELAX NG, rather than Pure ODD)</item>
           <item>The <gi>exemplum</gi> element contains a usage example</item>
           <item>Additional comments (<gi>remarks</gi>) and cross references
@@ -467,7 +467,7 @@
         <list>
           <item>une classe d'attribut comme <ident>att.global</ident> fournit des attributs</item>
           <item>une classe de modélisation comme <ident>model.profileDescPart</ident> regroupe des
-            éléments selon leur sémantique, ou leur possibilités de positionnement  : <list>
+            éléments selon leur sémantique, ou leur possibilités de positionnement : <list>
               <item>model.xxxLike : resemble à un xxx</item>
               <item>model.xxxPart : constitue un xxx</item>
             </list>
@@ -491,7 +491,8 @@
           <item><gi>abstract</gi> is a member of the <ident>model.profileDescPart</ident>
             class</item>
           <item>and can therefore appear inside <gi>profileDesc</gi>, the content of which is
-            defined as <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            defined as
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <classRef key="model.profileDescPart" maxOccurs="unbounded"/>
             </egXML>
           </item>
@@ -501,7 +502,6 @@
               <ident>att.source</ident>, the attribute <att>source</att> is also available. </item>
         </list>
       </div>
-
       <div xml:lang="fr">
         <head>Par exemple</head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
@@ -513,16 +513,15 @@
         </egXML>
         <list>
           <item><gi>abstract</gi> est membre de <ident>model.profileDescPart</ident></item>
-          <item>le contenu de <gi>profileDesc</gi> est <egXML
-              xmlns="http://www.tei-c.org/ns/Examples">
-              <zeroOrMore xmlns="http://RELAX NG.org/ns/structure/1.0">
-                <ref name="model.profileDescPart"/>
-              </zeroOrMore></egXML>
+          <item>le contenu de <gi>profileDesc</gi> est
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <classRef key="model.profileDescPart" minOccurs="0" maxOccurs="unbounded"/>
+            </egXML>
           </item>
           <item> en tant que membre de <ident>att.responsibility</ident>, il hérite des attributs
               <att>cert</att> et <att>resp</att></item>
           <item><ident>att.responsibility</ident> lui transmet également l'attribut
-            <att>source</att>, parce qu'elle est <soCalled>memberOf</soCalled> de la classe
+              <att>source</att>, parce qu'elle est <soCalled>memberOf</soCalled> de la classe
               <ident>att.source</ident></item>
         </list>
       </div>
@@ -541,12 +540,11 @@
       <div xml:lang="fr">
         <head>Définition du contenu d'un élément</head>
         <list>
-          <item>Actuellement, la TEI se sert du langage RELAX NG pour définir le contenu ("content
+          <item>Avant 2014, la TEI se servait du langage RELAX NG pour définir le contenu ("content
             model") des éléments et des attributs </item>
           <item>(A l'époque, c'était du SGML DTD)</item>
-          <item>Dans pureODD, on remplace cela avec des éléments ODD, comme vous l'avez déjà vu</item>
-          <item>pureODD est compris dans les versions TEI P5 depuis 2.6.0 (dec 2013), mais on est
-            toujours en phase beta test. </item>
+          <item>Depuis 2015, on remplace cela avec des éléments ODD, comme vous l'avez déjà
+            vu</item>
           <item>Pure ODD est plus expressif que DTD ou XSD</item>
         </list>
       </div>
@@ -582,11 +580,25 @@
               </rng:choice>
             </rng:oneOrMore></content></egXML>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <content><alternate maxOccurs="unbounded"><classRef key="model.pLike"/><classRef
-                key="model.listLike"/></alternate></content>
+          <content><alternate maxOccurs="unbounded"><classRef key="model.pLike"/>
+              <classRef key="model.listLike"/></alternate></content>
         </egXML>
         <p rend="box">Voir <ref target="reviewingODD.pdf">Burnard et Rahtz 2013</ref> pour les
           détails</p>
+      </div>
+      <div xml:lang="fr">
+        <head>Pure ODD en sommaire</head>
+        <list>
+          <item>On précise le type d'objet auquel un modèle fait référence en utilisant
+              <gi>elementRef</gi>, <gi>classRef</gi>, ou <gi>macroRef</gi></item>
+          <item>On utilise les attributs <att>minOccurs</att> et <att>maxOccurs</att> pour indiquer
+            la cardinalité et l'optionalité</item>
+          <item>On peut regrouper les références par <gi>sequence</gi>, par <gi>alternate</gi>, ou
+            par <gi>interleave</gi> (mais)</item>
+          <item>On utilise un élément spécifique <gi>textNode</gi> pour indiquer la présence du
+            texte pur</item>
+          <item>un <gi>content</gi> vide indique un élément sans contenu</item><item>Un autre élément spécifique <gi>anyXML</gi> est proposé</item>
+        </list>
       </div>
       <div xml:lang="en">
         <head>What is a class reference?</head>
@@ -627,7 +639,7 @@
       <div xml:lang="fr">
         <head>Que signifie la référence à une classe (de modele)?</head>
         <p>La signification d'un <gi>classRef</gi> au sein de <gi>content</gi> varie selon la valeur
-          de son attribut <att>expand</att>. </p>
+          de ses attributs. </p>
         <p>Considérons le cas d'une classe ayant trois membres x, y, z...</p>
         <table>
           <row role="label">
@@ -660,46 +672,34 @@
         <p>Les attributs <att>include</att> et <att>except</att> permettant la sélection ou la
           suppression de certain membres de la classe également </p>
       </div>
-
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Exemples</head>
-        <p>Un exemple vaut un million de mots... mais ce n'est pas évident de savoir comment intégrer un
-          exemple XML dans un document XML : surtout si on souhaite le valider en même temps.
-          Plusieurs démarches sont possibles : <list>
-            <item>on représente les chevrons par des entités (&amp;lt; etc) : mais la source devient
-              illisible et pas validable</item>
-            <item>on englobe tout dans un CDATA marked section <code>&lt;![CDATA[&lt;p>comme
-                ça&lt;/p> &#93;]></code> : la source est plus lisible mais pas validable</item>
-            <item>on englobe tout dans un élément d'un autre namespace <code rend="tiny">&lt;egXML
-                xmlns="http://www.tei-c.org/ns/Examples"> &lt;p>ça marche !&lt;/p></code>
-            </item>
-          </list></p>
+        <p>Un exemple vaut un million de mots... </p>
         <p>Les expressions du namespace <code>http://www.tei-c.org/ns/Examples</code> sont validées
-          par un schéma spécial, qui permet tout élément TEI comme racine, en utilisant
-          le validateur onvdl.</p>
+          par un schéma spécial, qui permet tout élément TEI comme racine, en utilisant le
+          validateur onvdl.</p>
       </div>
-
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Contraintes des contenus</head>
-        <p>Le modèle de contenu n'est que l'une des manières de restreindre ce qui est permis dans un
-          document. On peut aussi exprimer une contrainte ...</p>
+        <p>Le modèle de contenu n'est que l'une des manières de restreindre ce qui est permis dans
+          un document. On peut aussi exprimer une contrainte ...</p>
         <list>
           <item>par référence à un élément <gi>valList</gi>... </item>
-          <item>par reference à un élément <gi>datatype</gi> (s'applique uniquement aux attributs) </item>
+          <item>par reference à un élément <gi>dataSpec</gi>  </item>
           <item>par inclusion des éléments <gi>constraintSpec</gi> (expression en ISO schématron)
           </item>
         </list>
       </div>
-
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Spécification des listes de valeurs</head>
-        <p>Les valeurs possibles d'un attribut peuvent être spécifiées par un <gi>datatype</gi> et/ou
-          par <gi>valList</gi>. </p>
+        <p>Les valeurs possibles d'un attribut peuvent être spécifiées par un <gi>datatype</gi>
+          et/ou par <gi>valList</gi>. </p>
         <p>Un besoin assez commun est de spécifier une <term>énumération</term> (une liste - ouverte
-          ou fermée - de valeurs) <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+          ou fermée - de valeurs)
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <attDef ident="status">
               <desc>indique l'état courant du système selon un code de couleur</desc>
               <defaultVal>green</defaultVal>
@@ -710,7 +710,8 @@
                 <valItem ident="white"><desc>état inconnu du système</desc></valItem>
               </valList>
             </attDef>
-          </egXML></p>
+          </egXML>
+        </p>
       </div>
       <div xml:lang="en">
         <head>Schematron constraints</head>
@@ -745,10 +746,9 @@
             etc. par ex des contraintes contextuelles ou concurrentielles</item>
           <item>le traitement de ces règles nécessite une étape additionnelle dans la validation des
             documents</item>
-          <item>mais cela est possible avec la version courante d'oXygen (si votre schéma s'exprime en
-            RELAX NG et si vos contraintes s'expriment en ISO schematron.</item>
+          <item>mais cela est possible avec la version courante d'oXygen (si votre schéma s'exprime
+            en RELAX NG et si vos contraintes s'expriment en ISO schematron.</item>
         </list>
-
       </div>
       <div xml:lang="en">
         <head>Schematron example</head>
@@ -780,7 +780,6 @@
         </list>
         <p>Nous reviendrons sur ce sujet plus loin...</p>
       </div>
-
       <div xml:lang="en">
         <head>ODD is also a customization language </head>
         <p>It is used both to specify your choices from the TEI framework, and to specify the
@@ -799,7 +798,6 @@
           original, and one modified. ODD processing must unify these, following rules we will
           explain later. </p>
       </div>
-
       <div xml:lang="fr">
         <head>ODD est aussi une langage de personnalisation </head>
         <p>On se sert du même système pour spécifier ses choix dans le grand bazar de la TEI et pour
@@ -816,7 +814,6 @@
         <p>Le traitement d'un ODD implique la résolution de spécifications multiples pour un même
           objet</p>
       </div>
-
       <div xml:lang="en">
         <head>A simple customization example</head>
         <p>As you've already seen, we use the <gi>schemaSpec</gi> element to specify a schema,
@@ -838,19 +835,20 @@
           </schemaSpec>
         </egXML>
       </div>
-
       <div xml:lang="fr">
         <head>Création d'un personalisation</head>
         <p>Comme vous le savez déjà, on utilise l'élément <gi>schemaSpec</gi> pour spécifier un
           schéma: qu'il soit vierge, ou personnalisé. </p>
         <list>
           <item>L'attribut <att>ident</att> obligatoire fournit un nom pour le schéma</item>
-          <item>L'attribut <att>start</att> indique le ou les noms des élément(s) racine(s) du schéma </item>
-          <item>L'attribut <att>source</att> indique l'emplacement de la source TEI dans le cas d'une
-            personnalisation (par ex une version spécifique de TEI P5) </item>
+          <item>L'attribut <att>start</att> indique le ou les noms des élément(s) racine(s) du
+            schéma </item>
+          <item>L'attribut <att>source</att> indique l'emplacement de la source TEI dans le cas
+            d'une personnalisation (par ex une version spécifique de TEI P5) </item>
           <item>Les attributs <att>docLang</att> et <att>targetLang</att> permettent la sélection
             des langues à utiliser pour les descriptions d'éléments et pour les noms d'élément
-            respectivement, en supposant la présence dans cette source des traductions requises</item>
+            respectivement, en supposant la présence dans cette source des traductions
+            requises</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
           <schemaSpec start="TEI" ident="testschema" source="tei:1.5.0" docLang="fr">
@@ -858,7 +856,6 @@
           </schemaSpec>
         </egXML>
       </div>
-
       <div xml:lang="fr">
         <head>Composants d'un schemaSpec</head>
         <list>
@@ -869,15 +866,17 @@
       </div>
       <div xml:lang="en">
         <head>Choosing by exclusion</head>
-        <p>You can specify just the elements you want to exclude, and take all the rest: <egXML
-            xmlns="http://www.tei-c.org/ns/Examples">
+        <p>You can specify just the elements you want to exclude, and take all the rest:
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core" except="mentioned quote said"/>
               <moduleRef key="header"/>
               <moduleRef key="textstructure"/>
             </schemaSpec>
-          </egXML></p>
-        <p>also expressible as: <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          </egXML>
+        </p>
+        <p>also expressible as:
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
@@ -891,15 +890,18 @@
       </div>
       <div xml:lang="fr">
         <head>Selection par exclusion</head>
-        <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux 
-          proposés par un module : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux proposés par
+          un module :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core" except="mentioned quote said"/>
               <moduleRef key="header"/>
               <moduleRef key="textstructure"/>
             </schemaSpec>
-          </egXML></p>
-        <p>ou également : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          </egXML>
+        </p>
+        <p>ou également :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
@@ -914,8 +916,8 @@
       </div>
       <div xml:lang="en">
         <head>Choosing by inclusion</head>
-        <p>You can specify just the elements you want to include, and suppress all the rest : <egXML
-            xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+        <p>You can specify just the elements you want to include, and suppress all the rest :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
@@ -923,20 +925,23 @@
             </schemaSpec>
           </egXML>
         </p>
-        <p>also expressible as : <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+        <p>also expressible as :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
               <elementRef key="div"/>
               <elementRef key="body"/>
-            </schemaSpec></egXML></p>
+            </schemaSpec></egXML>
+        </p>
         <p rend="box">Take care ! a module can define classes or macros as well as elements.
             <att>include</att> and <att>except</att> apply <emph>only</emph> to elements!</p>
       </div>
       <div xml:lang="fr">
         <head>Sélection par inclusion</head>
         <p>Vous pouvez spécifier les éléments que vous souhaitez inclure parmi ceux qui sont
-          proposés par un module : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          proposés par un module :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschema">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
@@ -944,13 +949,15 @@
             </schemaSpec>
           </egXML>
         </p>
-        <p>ou également : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        <p>ou également :
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <schemaSpec start="TEI" ident="testschéma">
               <moduleRef key="core"/>
               <moduleRef key="header"/>
               <elementRef key="div"/>
               <elementRef key="body"/>
-            </schemaSpec></egXML></p>
+            </schemaSpec></egXML>
+        </p>
         <p rend="box">Attention ! un module peut définir d'autres choses que des éléments. Les
           attributs <att>include</att> et <att>except</att> ne s'appliquent qu'aux éléments</p>
       </div>
@@ -989,7 +996,7 @@
           </item>
           <item>Chaque <gi>ab</gi> ne permet qu'une séquence d'éléments <gi>s</gi></item>
           <item>Chaque <gi>s</gi> est composé d'éléments <gi>w</gi> et <gi>pc</gi> elements. </item>
-          <item>et nous souhaitons supprimer la majorité  des attributs, en gardant notamment
+          <item>et nous souhaitons supprimer la majorité des attributs, en gardant notamment
               <att>xml:id</att>, <att>xml:lang</att>, <att>type</att>, <att>subtype</att>
           </item>
         </list>
@@ -1019,14 +1026,13 @@
       <div xml:lang="fr">
         <!-- no eng equiv -->
         <head>Exercice un peu plus avancé</head>
-
         <p>Continuons de personnaliser le schéma feather... </p>
         <list>
           <item>Supprimez tous les attributs globaux sauf <att>style</att>
             <att>xml:id</att> et <att>xml:lang</att></item>
           <item>Supprimez l'élément <gi>title</gi> du body, mais non pas du Header</item>
-          <item>Ajoutez l'élément <gi>span</gi> et assurez vous que ces règles schematron sont prises en
-compte dans votre schéma </item>
+          <item>Ajoutez l'élément <gi>span</gi> et assurez vous que ces règles schematron sont
+            prises en compte dans votre schéma </item>
           <item>Modifiez le contenu de <gi>s</gi> pour ne permettre que des <gi>w</gi></item>
           <item>Ajouter un nouveau élément <gi>mw</gi> pour les séquences de mots</item>
         </list>
@@ -1054,8 +1060,8 @@ compte dans votre schéma </item>
       <div xml:lang="fr">
         <head>Etre conforme à la TEI veut dire quoi?</head>
         <list>
-          <item><label>être honnête</label> : Les éléments XML qui sont déclarés comme appartenant au
-            namespace TEI doivent respecter les définitions TEI de ces éléments</item>
+          <item><label>être honnête</label> : Les éléments XML qui sont déclarés comme appartenant
+            au namespace TEI doivent respecter les définitions TEI de ces éléments</item>
           <item><label>être explicite</label> : Pour valider un document TEI, un ODD est fortement
             conseillé, parce que cela mettra en évidence toutes les modifications effectuées.</item>
         </list>
