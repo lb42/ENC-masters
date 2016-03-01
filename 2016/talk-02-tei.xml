@@ -261,7 +261,7 @@
               <item>élément, plus ses attributs locaux</item>
               <item>classe d'attribut, avec les attributs qu'elle fournit</item>
               <item>macro (patron)</item>
-              <item>macro (datatype)</item>
+              <item>datatype </item>
             </list>
           </item>
         </list>

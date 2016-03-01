@@ -101,28 +101,25 @@
                <item><list>
                      <item>Discussion des attentes et connaissances des participants. Sommaire de la
                         journee. </item>
-                     <item><ref target="talk-01-init-fr.xml">Initiation au format ODD</ref> :
+                     <item><ref target="talk-01-init.pdf">Initiation au format ODD</ref> :
                         présentation du syntaxe des spécifications ODD et exercice simple de
-                        création d'un ODD non-TEI élémentaire: concepts de Pure ODD. </item>
-                     <item>Rappel de l'organisation et du contenu de la TEI : conceptes des <hi
-                           rend="italic">classes</hi>,<hi rend="italic"> macros, datatypes</hi>. </item>
-                     <item>Cas d'étude : on construit un ODD pour le balisage des cartes postales
-                        avec Roma; on fait la meme chose à partir d'un corpus de documents éxistant:
-                        discussion des differences entre les deux methodes; </item>
+                        création d'un ODD non-TEI élémentaire </item>
+                  <item><ref target="talk-02-tei.pdf">Une carte routière des TEI Guidelines</ref> : rappel de l'organisation et du contenu de la TEI </item>
+                     <item><ref target="talk-03-cartes.pdf">Un cas d'étude : les cartes
+                           postales</ref> : on construit un ODD pour le balisage des cartes postales
+                        avec Roma</item>
                   </list></item>
                <label>après-midi</label>
                <item><list>
-                     <item><ref target="talk-04-tagdocs-fr.xml"> ODD : mode d'emploi TEI</ref>:
-                        présentation de la source TEI P5, explication de fonctionnement de quelques
-                        personnalisations;</item>
-                     <item><ref target="ex-4-odd.xml">Creation d'un ODD ex nihilo</ref>:
-                        construction d'une ODD pour un encodage minimal, avec controles des données
-                        exhaustives </item>
-                     <item><ref target="talk-05-advanced.xml">Topiques plus avancées</ref>. Usage de
+                     <item><ref target="talk-04-tagdocs-fr.xml">ODD : mode d'emploi TEI</ref>:
+                        présentation de la source TEI P5, explication de son fonctionnement</item>
+                     <item><ref target="talk-05-perso.pdf">ODD comme systeme de
+                           personnalisation</ref> : création d'un ODD ex nihilo </item>
+                    <!-- <item><ref target="talk-05-advanced.xml">Topiques plus avancées</ref>. Usage de
                         specGrp et moduleRef. Usage des espaces de nommage par ex MathML. Usage de
-                        Schematron. Principes de conformance.
+                        Schematron. Principes de conformance.-->
                         <!--Chaining of ODDs. Using ODD to JSON
-                        for visualisation --></item>
+                        for visualisation </item> -->
                      <item>Revue et discussion</item>
                   </list></item>
             </list>

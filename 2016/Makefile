@@ -5,7 +5,7 @@ talk-01-init \
 talk-02-tei \
 talk-03-cards \
 talk-04-tagdocs \
-talk-05-advanced
+talk-05-perso
 
 EXERCISES= \
 
