@@ -523,8 +523,8 @@ France
       <div xml:lang="fr">
         <head>Pourquoi utiliser la TEI (ou autre standard)? </head>
         <list>
-          <item>faciliter la re-utilisation des ressources</item>
-          <item>reduire les frais de developpement et la complexite des outils</item>
+          <item>faciliter la ré-utilisation des ressources</item>
+          <item>réduire les frais de développement et la complexité des outils</item>
           <item>profiter de l'existence des <q>frequently answered questions</q> — des solutions
             communes ayant des applications diverses</item>
         </list>
@@ -578,7 +578,7 @@ France
         <head>Cette explication s'exprime (dans TEI) par un ODD</head>
         <list>
           <item>On exprime ses besoins/souhaits d'encodage formellement </item>
-          <item>Cette expression est (bien sur) conforme a un standard documentaire predefini</item>
+          <item>Cette expression est (bien sûr) conforme à un standard documentaire prédéfini</item>
           <item>Donc il reste comprehensible, voire utilisable, par d'autres personnes</item>
         </list>
         <p rend="box">Voila l'objectif du systeme ODD (<hi>O</hi>ne <hi>D</hi>ocument <hi>D</hi>oes
@@ -657,15 +657,15 @@ France
       </div>
       <div xml:lang="fr">
         <head>Traitement d'un ODD</head>
-        <p>Comme vous avez deja vu, un ODD est un document XML comme les autres, susceptible donc d'etre transforme en <list type="instructions">
+        <p>Comme vous avez déjà vu, un ODD est un document XML comme les autres, susceptible donc d'être transformé en <list>
           <item>manuel de projet, en plusieurs formats (HTML,
             DOCX, PDF...) </item>
-          <item>un ou plusieurs schemas pour la validation des fichiers TEI XML
+          <item>un ou plusieurs schémas pour la validation des fichiers TEI XML
             files</item>
         </list></p>
-        <p>Les feuilles de style XSLT TEI servent a faire tout les deux. Ils sont disponibles <list>
-          <item>sur le web a travers l'interface Roma or Byzantium</item>
-           <item>integrees dans oXygen</item>
+        <p>Les feuilles de style XSLT TEI servent à faire tout les deux. Ils sont disponibles <list>
+          <item>sur le web à travers l'interface Roma or Byzantium</item>
+           <item>intégrées dans oXygen</item>
           <item>sur ligne de commande (Unix ou Mac)</item>
           
         </list></p>
