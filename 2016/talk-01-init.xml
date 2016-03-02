@@ -474,8 +474,7 @@
             the <gi>valList</gi> element</item>
         </list>
         <p>For example...
-          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"
-            xmlns:rng="http://relaxng.org/ns/structure/1.0">
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
             <classSpec ident="bookAtts" type="atts">
               <desc>this class defines the attributes that can appear on any element inside a
                 book</desc>
@@ -483,7 +482,7 @@
                 <attDef ident="xml:id">
                   <desc>provides a unique identifier for an element</desc>
                   <datatype>
-                    <data xmlns="http://relaxng.org/ns/structure/1.0" type="ID"/>
+                    <dataRef name="ID"/>
                   </datatype>
                 </attDef>
                 <attDef ident="status">
@@ -516,7 +515,7 @@
                 <attDef ident="xml:id">
                   <desc>fournit un identifiant unique pour le composant</desc>
                   <datatype>
-                    <data xmlns="http://relaxng.org/ns/structure/1.0" type="ID"/>
+                    <dataRef name="ID"/>
                   </datatype>
                 </attDef>
                 <attDef ident="status">
@@ -739,10 +738,10 @@
       <div xml:lang="en">
         <head>Constructing a TEI ODD</head>
         <list>
-          <item>Open the file <ident>oddex-3.odd</ident> and compare it with the previous
+          <item>Open the file <ident>oddex-tei.odd</ident> and compare it with the previous
             versions</item>
           <item>Compile it as before, and use it to validate the TEI file
-              <ident>oddex-3-test.xml</ident></item>
+              <ident>oddex-tei-test.xml</ident></item>
           <item>Note that a TEI document must use the TEI namespace</item>
           <item>Note also that TEI concepts don't always overlap exactly with our initial model
             (e.g. a rend="box">> cannot appear between <gi>p</gi> elements)</item>
@@ -752,10 +751,10 @@
       <div xml:lang="fr">
         <head>Création d'un schéma TEI</head>
         <list>
-          <item>Chargez le fichier <ident>oddex-3.odd</ident> avec oXygen et comparez le avec les
+          <item>Chargez le fichier <ident>oddex-tei.odd</ident> avec oXygen et comparez le avec les
             versions précédentes </item>
           <item>Transformez ce fichier en schéma, comme d'habitude.</item>
-          <item>Le fichier <ident>oddex-3-test.xml</ident> contient une version TEI de notre fichier
+          <item>Le fichier <ident>oddex-tei-test.xml</ident> contient une version TEI de notre fichier
             de test initial : validez-le avec le schéma que vous venez de créer.</item>
           <item>Notez qu'un document TEI <emph>doit</emph> utiliser l'espace de nommage TEI</item>
           <item>Notez également que les concepts TEI et les nôtres ne sont pas forcément identiques

@@ -44,9 +44,9 @@
           <item>Chaque projet est différent; mais chaque projet ressemble à un autre
             quelconque</item>
           <item>La TEI vous propose <list>
-              <item>choisir tout (deconseille mais simple)</item><item>choisir une des selections
-                predefinies (TEI Lite, TEI Simple...)</item>choisir l'option de rouler-soi-meme
-              <item/>
+              <item>choisir tout (déconseillé mais simple)</item>
+              <item>choisir une des selections prédéfinies (TEI Lite, TEI Simple...)</item>
+              <item>choisir l'option de rouler-soi-meme </item>
             </list></item>
         </list>
       </div>
@@ -528,8 +528,8 @@ France
           <item>profiter de l'existence des <q>frequently answered questions</q> — des solutions
             communes ayant des applications diverses</item>
         </list>
-        <p rend="box">La TEI fut concue et dessinee pour soutenir plusieurs perspectives sur une
-          meme ressource. Elle evolue en modelisant les preoccupations des Humanites numeriques.
+        <p rend="box">La TEI fut conçue et dessinée pour soutenir plusieurs perspectives sur une
+          même ressource. Elle evolue en modelisant les préoccupations des Humanités numériques.
         </p>
       </div>
       <div xml:lang="en">
@@ -549,7 +549,7 @@ France
       <div xml:lang="fr">
         <head>Etre conforme à la TEI veut dire quoi?</head>
         <list>
-          <item><label>être honnête</label> : Les éléments XML qui sont déclarés comme appartenant
+          <item><label>être honnêt(e)</label> : Les éléments XML qui sont déclarés comme appartenant
             au namespace TEI doivent respecter les définitions TEI de ces éléments</item>
           <item><label>être explicite</label> : Pour valider un document TEI, un ODD est fortement
             conseillé, parce que cela mettra en évidence toutes les modifications effectuées.</item>
@@ -560,8 +560,8 @@ France
             <item>Toute autre élément présent doit donc appartenir à un autre namespace</item>
           </list></p>
         <p rend="box">L'objet de ces règles est de faciliter le "blind interchange" des documents.
-          Comme standard, la TEI ne dit pas "fais ce que moi je fais", mais plutot "explique mois ce
-          que tu fais". </p>
+          Comme standard, la TEI ne dit pas <q>fais ce que moi je fais</q>, mais plutot <q>explique moi ce
+          que tu fais</q>. </p>
       </div>
       <div xml:lang="en">
         <head>For the TEI, that explanation is an ODD</head>
@@ -575,7 +575,7 @@ France
           all)</p>
       </div>
       <div xml:lang="fr">
-        <head>Cette explication s'exprime (dans TEI) par un ODD</head>
+        <head>Cette explication s'exprime par un ODD</head>
         <list>
           <item>On exprime ses besoins/souhaits d'encodage formellement </item>
           <item>Cette expression est (bien sûr) conforme à un standard documentaire prédéfini</item>
@@ -639,7 +639,8 @@ France
             <!-- ... -->
           </schemaSpec>
         </egXML>
-        <p rend="box">c'est une petite partie de l'ODD : la reste fournit de la documentation... </p>
+        <p rend="box">c'est une petite partie de l'ODD : la reste fournit de la documentation...
+        </p>
       </div>
       <div xml:lang="en">
         <head>ODD processing</head>
@@ -657,21 +658,19 @@ France
       </div>
       <div xml:lang="fr">
         <head>Traitement d'un ODD</head>
-        <p>Comme vous avez déjà vu, un ODD est un document XML comme les autres, susceptible donc d'être transformé en <list>
-          <item>manuel de projet, en plusieurs formats (HTML,
-            DOCX, PDF...) </item>
-          <item>un ou plusieurs schémas pour la validation des fichiers TEI XML
-            files</item>
-        </list></p>
+        <p>Comme vous avez déjà vu, un ODD est un document XML comme les autres, susceptible donc
+          d'être transformé en <list>
+            <item>manuel de projet, en plusieurs formats (HTML, DOCX, PDF...) </item>
+            <item>un ou plusieurs schémas pour la validation des fichiers TEI XML files</item>
+          </list></p>
         <p>Les feuilles de style XSLT TEI servent à faire tout les deux. Ils sont disponibles <list>
-          <item>sur le web à travers l'interface Roma or Byzantium</item>
-           <item>intégrées dans oXygen</item>
-          <item>sur ligne de commande (Unix ou Mac)</item>
-          
-        </list></p>
+            <item>sur le web à travers l'interface Roma or Byzantium</item>
+            <item>intégrées dans oXygen</item>
+            <item>sur ligne de commande (Unix ou Mac)</item>
+          </list></p>
       </div>
- 
-     <!-- <div xml:lang="fr">
+
+      <!-- <div xml:lang="fr">
         <head>Génération d’un ODD TEI</head>
         <p>La feuille de style <ident>oddbyexample</ident> nous permet de générer un ODD à partir
           d’un corpus de documents TEI.</p>

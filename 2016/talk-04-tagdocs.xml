@@ -30,9 +30,9 @@
             target="http://www.tei-c.org/release/xml/tei/odd/Source/"/>) contains : <list>
             <item>39 TEI-XML files, 25 of which correspond to a published chapter, most of them
               defining a module, for example <ident>PH-PrimarySources.xml</ident></item>
-            <item>778 TEI-XML files, each defining an element, a class, or a macro; more
-              specifically: <list>
-                <item>29 datatype macros (<code>data.xxxx</code>) for example
+              <item>778 specifications TEI-XML <!--files each defining an element, a class, or a macro; more
+              specifically: --><list>
+                <item>29 data specs (<code>teidata.xxxx</code>) for example
                     <ident>data.sex.xml</ident></item>
                 <item>116 model classes (<code>model.xxxx</code>) for example
                     <ident>model.biblLike.xml</ident></item>

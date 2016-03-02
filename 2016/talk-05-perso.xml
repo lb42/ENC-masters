@@ -128,32 +128,8 @@
                </egXML>
             </p>
          </div>
-         <div xml:lang="fr">
-            <head>Selection par exclusion</head>
-            <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux proposés
-               par un module :
-               <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <schemaSpec start="TEI" ident="testschema">
-                     <moduleRef key="core" except="mentioned quote said"/>
-                     <moduleRef key="header"/>
-                     <moduleRef key="textstructure"/>
-                  </schemaSpec>
-               </egXML>
-            </p>
-            <p>ou également :
-               <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                  <schemaSpec start="TEI" ident="testschema">
-                     <moduleRef key="core"/>
-                     <moduleRef key="header"/>
-                     <moduleRef key="textstructure"/>
-                     <elementSpec ident="mentioned" mode="delete"/>
-                     <elementSpec ident="quote" mode="delete"/>
-                     <elementSpec ident="said" mode="delete"/>
-                  </schemaSpec>
-               </egXML>
-            </p>
-            <p>(L'attribut <att>mode</att> contrôle la résolution de déclarations multiples)</p>
-         </div>
+        
+         
          <div xml:lang="en">
             <head>Choosing by inclusion</head>
             <p>You can specify just the elements you want to include, and suppress all the rest :
@@ -183,16 +159,16 @@
                proposés par un module :
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
                   <schemaSpec start="TEI" ident="testschema">
-                     <moduleRef key="core"/>
+                     <moduleRef key="tei"/>
                      <moduleRef key="header"/>
                      <moduleRef key="textstructure" include="body div"/>
                   </schemaSpec>
                </egXML>
             </p>
-            <p>ou également :
+            <p>ou (presque) également :
                <egXML xmlns="http://www.tei-c.org/ns/Examples">
                   <schemaSpec start="TEI" ident="testschéma">
-                     <moduleRef key="core"/>
+                     <moduleRef key="tei"/>
                      <moduleRef key="header"/>
                      <elementRef key="div"/>
                      <elementRef key="body"/>
@@ -201,6 +177,47 @@
             <p rend="box">Attention ! un module peut définir d'autres choses que des éléments. Les
                attributs <att>include</att> et <att>except</att> ne s'appliquent qu'aux éléments</p>
          </div>
+        
+         <div xml:lang="fr">
+            <head>Selection par exclusion</head>
+            <p> Vous pouvez spécifier les éléments que vous souhaitez supprimer parmi ceux proposés
+               par un module :
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <schemaSpec start="TEI" ident="testschema">
+                     <moduleRef key="core" except="mentioned quote said"/>
+                     <!-- ... -->
+                  </schemaSpec>
+               </egXML>
+            </p>
+            <p>ou également :
+               <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                  <schemaSpec start="TEI" ident="testschema">
+                     <moduleRef key="core"/>
+                     <!-- ... -->
+                     <elementSpec ident="mentioned" mode="delete"/>
+                     <elementSpec ident="quote" mode="delete"/>
+                     <elementSpec ident="said" mode="delete"/>
+                  </schemaSpec>
+               </egXML>
+            </p></div>
+         <div><head>L'attribut  <att>mode</att> </head>
+            <p>Il peut arriver que votre ODD propose plusieurs déclarations pour un même objet. Ici par ex, 
+               il y a une déclaration de l'élément
+               <gi>quote</gi> derivée du module <ident>core</ident>, et une autre fourni explicitement par un 
+               <gi>elementSpec</gi>
+               </p>
+            <p>L'attribut <att>mode</att>  contrôle la résolution de déclarations multiples eventuelles</p>
+            <table>
+               <row role='label'><cell>valeur</cell><cell>effet</cell></row>
+               <row><cell>add</cell><cell>l'objet sera ajouté s'il n'existe pas encore (autrement, aucun effet)</cell></row>
+               <row><cell>delete</cell><cell>l'objet sera supprimé, s'il existe (autrement, aucun effet)</cell></row>
+              <row><cell>change</cell><cell>l'objet sera modifié, en
+                combinant les parties précisées avec les parties existantes </cell></row>
+                 <row><cell>replace</cell><cell>l'objet sera modifié, en
+                    ajoutant les parties precisées et en supprimant toutes les parties existantes</cell></row> 
+            </table>
+         </div>
+         
          <div xml:lang="en">
             <head>First customization exercise </head>
             <p>Let's try to make a really simple schema called <ident>featherLite</ident> which
@@ -305,7 +322,7 @@
             <head>Exercice de personnalisation (4) </head>
             <p>Notre personnalisation propose beaucoup d'attributs. Nous pouvons supprimer ceux qui
                ne nous interessent pas en deux manières: <list>
-                  <item>on peut supprimer une classe <emph>entièrement</emph> avec un redeclaration
+                  <item>on peut supprimer une classe <emph>entièrement</emph> avec un redéclaration
                      spécifiant <att>mode</att>=<val>delete</val>:
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <classSpec type="atts" ident="att.declaring" mode="delete"/>
@@ -349,7 +366,7 @@
                      <ident>genus</ident></item>
                <item>Cet attribut fournit le nom du genus auquel appartient l'objet indiqué:
                   expliquez cela dans son <gi>desc</gi></item>
-               <item>La valeur de cet attribut conformera au datatype
+               <item>La valeur de cet attribut sera conforme au datatype
                   <ident>teidata.word</ident></item>
                <item>Insérez un deuxième <gi>attDef</gi> pour définir un nouveau attribut
                      <att>status</att>

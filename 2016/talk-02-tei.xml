@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?oxygen NVDLSchema="../teitalks.nvdl"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
   xml:lang="fr">
 
@@ -51,7 +51,7 @@
       <div xml:id="map">
         <head>Orientation</head>
         <figure>
-          <graphic url="../../tei-fr/trunk/Talks/Graphics/sweeties.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/sweeties.jpg" height="90%"/>
         </figure>
       </div>
 
@@ -97,7 +97,7 @@
       </div>
       <div>
         <figure>
-          <graphic url="../../tei-fr/trunk/Talks/Graphics/theGuidelines.jpg"/>
+          <graphic url="../../tei-fr/trunk/Talks/Graphics/theGuidelines.jpg" height="90%"/>
         </figure>
       </div>
       
