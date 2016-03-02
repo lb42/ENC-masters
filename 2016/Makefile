@@ -22,7 +22,7 @@ pdfslides:
 	for i in $(TALKS) ; do \
 	saxon $$i.xml $(FRENCHIFY) -o:$$i-fr.xml; \
 	teitoslides --profile=tei $$i-fr.xml; \
-		mv $$i-fr.xml.slides $$i.pdf; \
+		mv $$i-fr.xml.slides Diapos/$$i.pdf; \
 	done
 clean:
 	-rm -f *.aux
