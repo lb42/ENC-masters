@@ -317,7 +317,7 @@
           </item>
           <item>Avec OxGarage convertissez du format <q>ODD Document</q> vers <q>Compiled ODD
               Document</q></item>
-          <item>Avec oXygen générew une nouvelle transformation Ant; utilisant la feuille XSLT
+          <item>Avec oXygen générez une nouvelle transformation Ant; utilisant la feuille XSLT
               <ident>odd2odd.xsl</ident> et les options définis par
               <ident>stylesheets/odd/build-to.xml</ident></item>
         </list>

@@ -17,9 +17,9 @@
   <text>
     <body>
       <head>Une personalisation minimale de la TEI</head>
-      <p>Cette personalisation propose un schema minimale pour la transcription 
-        des documents archivals. </p>
-      <schemaSpec ident="transMin" start="TEI text" docLang="fr">     
+      <p>Cette personalisation propose un schema minimale pour la transcription des documents
+        archivals. </p>
+      <schemaSpec ident="transMin" start="TEI text" docLang="fr">
         <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc"/>
         <elementRef key="title"/>
         <moduleRef key="tei"/>
@@ -28,8 +28,41 @@
         <elementRef key="pb"/>
         <elementRef key="unclear"/>
         <elementRef key="hi"/>
+        <elementRef key="g"/>
+        <elementRef key="name"/>
+        <classSpec type="atts" ident="att.edition" mode="delete"/>
+        <classSpec type="atts" ident="att.editLike" mode="delete"/>
         <classSpec type="atts" ident="att.declaring" mode="delete"/>
-        <classRef key="att.global.rendition"  except="rendition rend"/>
+        <classRef key="att.global.rendition" except="rendition rend"/>
+        <elementSpec ident="botName" ns="http://www.nimportekwa">
+          <desc>nom botanique</desc>
+          <classes>
+            <memberOf key="model.phrase"/>
+            <memberOf key="att.global"/>
+          </classes>
+          <content>
+            <macroRef key="macro.phraseSeq"/>
+          </content>
+          <attList>
+            <attDef ident="genus">
+              <desc>le nom formel de la famille a laquelle appartient l'entite nomme</desc>
+              <datatype><dataRef key="teidata.name"/></datatype>
+            </attDef>
+            <attDef ident="status">
+              <desc>le statut de ce nom dans une taxinomie informelle</desc>
+              <datatype><dataRef key="teidata.enumerated"/></datatype>
+              <valList type="semi">
+                <valItem ident="vulg">
+                  <desc>nom vulgaire</desc>
+                </valItem>
+                <valItem ident="sci">
+                  <desc>nom scientifique</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+
+        </elementSpec>
       </schemaSpec>
     </body>
   </text>
